@@ -36,11 +36,8 @@ get("/dice/2/6") do
 
   outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 
-  <<-HTML
-  <h1>2d6</h1>
-  <p>#{outcome}</p>
-  <p><a href="/">Back Home</a></p>
-  HTML
+  "<h1>2d6</h1>
+  <p>#{outcome}</p>"
 end
 
 get("/dice/2/10") do
@@ -50,11 +47,8 @@ get("/dice/2/10") do
 
   outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 
-  <<-HTML
-  <h1>2d10</h1>
-  <p>#{outcome}</p>
-  <p><a href="/">Back Home</a></p>
-  HTML
+  "<h1>2d10</h1>
+  <p>#{outcome}</p>"
 end
 
 get("/dice/1/10") do
@@ -62,11 +56,8 @@ get("/dice/1/10") do
 
   outcome = "You rolled a #{first_die}."
 
-  <<-HTML
-  <h1>1d10</h1>
-  <p>#{outcome}</p>
-  <p><a href="/">Back Home</a></p>
-  HTML
+  "<h1>1d10</h1>
+  <p>#{outcome}</p>"
 end
 
 get("/dice/5/4") do 
@@ -80,9 +71,6 @@ get("/dice/5/4") do
 
   outcome = "You rolled a #{d1}, a #{d2}, a #{d3}, a #{d4}, and a #{d5} for a total of #{sum}."
 
-  <<-HTML
-  <h1>5d4</h1>
-  <p>#{outcome}</p>
-  <p><a href="/">Back Home</a></p>
-  HTML
+  "<h1>5d4</h1>
+  <p>#{outcome}</p>"
 end
