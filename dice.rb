@@ -9,7 +9,7 @@ BetterErrors::Middleware.allow_ip!('0.0.0.0/0.0.0.0')
 
 
 get "/" do
-  erb(:elephant, {:layout => :wrapper})
+  erb(:elephant)
 end
 
 get("/zebra") do
@@ -27,7 +27,7 @@ get("/dice/2/6") do
 
   @outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 
-  erb(:two_six, {:layout => :wrapper})
+  erb(:two_six)
 end
 
 get("/dice/2/10") do
@@ -37,7 +37,7 @@ get("/dice/2/10") do
 
   @outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 
-  erb(:two_ten, {:layout => :wrapper})
+  erb(:two_ten)
 end
 
 get("/dice/1/10") do
@@ -45,7 +45,7 @@ get("/dice/1/10") do
 
   @outcome = "You rolled a #{first_die}."
 
-  erb(:one_ten, {:layout => :wrapper})
+  erb(:one_ten)
 end
 
 get("/dice/5/4") do 
@@ -59,5 +59,5 @@ get("/dice/5/4") do
 
   @outcome = "You rolled a #{d1}, a #{d2}, a #{d3}, a #{d4}, and a #{d5} for a total of #{sum}."
 
-  erb(:five_four, {:layout => :wrapper})
+  erb(:five_four)
 end
